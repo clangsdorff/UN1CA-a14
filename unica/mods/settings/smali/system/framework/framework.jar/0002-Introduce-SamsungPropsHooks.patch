@@ -6,8 +6,8 @@ Subject: [PATCH] Introduce SamsungPropsHooks
 UN1CA: this patch is not complete! Please check unica/mods/settings/customize.sh for more info.
 ---
  .../android/os/SemSystemProperties.smali      |  11 +-
- .../io/mesalabs/unica/SamsungPropsHooks.smali | 646 ++++++++++++++++++
- 2 files changed, 656 insertions(+), 1 deletion(-)
+ .../io/mesalabs/unica/SamsungPropsHooks.smali | 655 ++++++++++++++++++
+ 2 files changed, 665 insertions(+), 1 deletion(-)
  create mode 100644 smali_classes6/io/mesalabs/unica/SamsungPropsHooks.smali
 
 diff --git a/smali_classes3/android/os/SemSystemProperties.smali b/smali_classes3/android/os/SemSystemProperties.smali
@@ -38,7 +38,7 @@ new file mode 100644
 index 00000000..1e54bb41
 --- /dev/null
 +++ b/smali_classes6/io/mesalabs/unica/SamsungPropsHooks.smali
-@@ -0,0 +1,646 @@
+@@ -0,0 +1,655 @@
 +.class public final Lio/mesalabs/unica/SamsungPropsHooks;
 +.super Ljava/lang/Object;
 +.source "SamsungPropsHooks.java"
@@ -188,7 +188,7 @@ index 00000000..1e54bb41
 +
 +    const-string v5, "MODEL"
 +
-+    if-nez p0, :cond_9
++    if-nez p0, :cond_a
 +
 +    const-string p0, "com.sec.android.app.camera"
 +
@@ -196,7 +196,7 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-nez p0, :cond_9
++    if-nez p0, :cond_a
 +
 +    const-string p0, "com.samsung.android.cameraxservice"
 +
@@ -204,7 +204,7 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-nez p0, :cond_9
++    if-nez p0, :cond_a
 +
 +    const-string p0, "com.samsung.android.app.galaxyraw"
 +
@@ -229,7 +229,7 @@ index 00000000..1e54bb41
 +
 +    const/16 v0, 0x1f
 +
-+    if-ge p0, v0, :cond_a
++    if-ge p0, v0, :cond_b
 +
 +    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 +
@@ -342,7 +342,7 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-eqz p0, :cond_8
++    if-eqz p0, :cond_9
 +
 +    const-string p0, "ro.product.odm.model"
 +
@@ -354,15 +354,24 @@ index 00000000..1e54bb41
 +
 +    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 +
++    move-result v0
++
++    if-nez v0, :cond_8
++
++    const-string v0, "SM-A145"
++
++    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
++
 +    move-result p0
 +
-+    if-eqz p0, :cond_a
++    if-eqz p0, :cond_b
 +
++    :cond_8
 +    sput-boolean v1, Lio/mesalabs/unica/SamsungPropsHooks;->sSpoofSocProp:Z
 +
 +    goto :goto_3
 +
-+    :cond_8
++    :cond_9
 +    sget-object p0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 +
 +    const-string v1, "SM-S901"
@@ -371,11 +380,11 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-eqz p0, :cond_a
++    if-eqz p0, :cond_b
 +
 +    sget-boolean p0, Lio/mesalabs/unica/SamsungPropsHooks;->sIsUserApp:Z
 +
-+    if-eqz p0, :cond_a
++    if-eqz p0, :cond_b
 +
 +    const-string p0, "com.sec"
 +
@@ -383,7 +392,7 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-nez p0, :cond_a
++    if-nez p0, :cond_b
 +
 +    const-string p0, "com.samsung"
 +
@@ -391,7 +400,7 @@ index 00000000..1e54bb41
 +
 +    move-result p0
 +
-+    if-nez p0, :cond_a
++    if-nez p0, :cond_b
 +
 +    invoke-static {v3}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 +
@@ -405,7 +414,7 @@ index 00000000..1e54bb41
 +
 +    goto :goto_3
 +
-+    :cond_9
++    :cond_a
 +    :goto_2
 +    invoke-static {v3}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 +
@@ -421,7 +430,7 @@ index 00000000..1e54bb41
 +
 +    const/16 v0, 0x23
 +
-+    if-ge p0, v0, :cond_a
++    if-ge p0, v0, :cond_b
 +
 +    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 +
@@ -429,7 +438,7 @@ index 00000000..1e54bb41
 +
 +    invoke-static {v2, p0}, Lio/mesalabs/unica/SamsungPropsHooks;->setVersionField(Ljava/lang/String;Ljava/lang/Object;)V
 +
-+    :cond_a
++    :cond_b
 +    :goto_3
 +    return-void
 +.end method
