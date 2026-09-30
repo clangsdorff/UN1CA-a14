@@ -11,6 +11,30 @@ PRODUCT_DEBLOAT+="
 priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM55
 priv-app/HotwordEnrollmentXGoogleEx4CORTEXM55
 "
+SYSTEM_DEBLOAT+="
+system/app/BixbyWakeup
+system/app/StickerCenter
+system/app/VisionIntelligence3.7
+system/etc/default-permissions/default-permissions-com.samsung.android.smartsuggestions.xml
+system/etc/permissions/com.samsung.feature.aremoji_v2.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.aremoji.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.bixby.agent.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.bixby.wakeup.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.intellivoiceservice.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.smartsuggestions.xml
+system/etc/permissions/privapp-permissions-com.samsung.android.visionintelligence_v3.7.xml
+system/etc/permissions/signature-permissions-com.samsung.android.bixby.agent.xml
+system/etc/permissions/signature-permissions-com.samsung.android.visionintelligence_v3.7.xml
+system/etc/sysconfig/bixbyagent.xml
+system/etc/sysconfig/samsungintellivoiceservice.xml
+system/etc/sysconfig/samsungsmartsuggestions.xml
+system/priv-app/AREmoji
+system/priv-app/Bixby
+system/priv-app/BixbyVisionFramework3.5
+system/priv-app/SamsungIntelliVoiceServices
+system/priv-app/SamsungSmartSuggestions
+system/priv-app/StickerFaceARAvatar
+"
 
 # system_ext clean-up
 SYSTEM_EXT_DEBLOAT+="
