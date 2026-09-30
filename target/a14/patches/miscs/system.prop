@@ -3,3 +3,5 @@ persist.sys.unica.nativeblur=false
 
 # Compile SystemUI with the speed filter
 dalvik.vm.systemuicompilerfilter=speed
+
+log.tag.BT_VENDOR=S
