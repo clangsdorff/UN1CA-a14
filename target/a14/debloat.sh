@@ -8,8 +8,8 @@
 
 # Apps debloat
 PRODUCT_DEBLOAT+="
-priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM55
-priv-app/HotwordEnrollmentXGoogleEx4CORTEXM55
+priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM4
+priv-app/HotwordEnrollmentXGoogleEx4CORTEXM4
 "
 SYSTEM_DEBLOAT+="
 system/app/BixbyWakeup
