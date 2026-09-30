@@ -476,7 +476,7 @@ index 00000000..1e54bb41
 +
 +    if-eqz v0, :cond_1
 +
-+    const-string v0, "exynos9611"
++    const-string v0, "s5e8825"
 +
 +    goto :goto_0
 +
