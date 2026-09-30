@@ -36,7 +36,6 @@
     <string name="unica_menu_item_reboot_recovery_title">Поново покрени у Recovery</string>
     <string name="unica_menu_item_reboot_title">Поново покрени</string>
     <string name="unica_menu_reboot_title">Опције за поновно покретање</string>
-    <string name="unica_native_blur_title">Укључи ефекат замућења уживо</string>
     <string name="unica_pif_custom_title">Увези прилагођена PIF својства из датотеке</string>
     <string name="unica_pif_summary">Лажирајте свој уређај да бисте прошли Google Play атестацију.</string>
     <string name="unica_pif_title">Play Integrity Fix</string>

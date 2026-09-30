@@ -36,7 +36,6 @@
     <string name="unica_menu_item_reboot_recovery_title">Рестартиране в режим Recovery</string>
     <string name="unica_menu_item_reboot_title">Рестартиране</string>
     <string name="unica_menu_reboot_title">Опции за рестартиране</string>
-    <string name="unica_native_blur_title">Включване на blur ефект</string>
     <string name="unica_pif_custom_title">Импортиране на персонализирани PIF свойства от файл</string>
     <string name="unica_pif_summary">Прикрийте устройството си, за да преминете атестацията на Google Play.</string>
     <string name="unica_pif_title">Play Integrity Fix</string>

@@ -12,7 +12,6 @@
     <string name="unica_games_spoof_title">ปลดล็อค FPS ที่สูงขี้นในเกม</string>
     <string name="unica_keybox_toast_error">มีปัญหาบางอย่างเกิดขึ้น</string>
     <string name="unica_max_refresh_rate_title">บังคับให้รีเฟรชเรทหน้าจอสูงตลอด</string>
-    <string name="unica_native_blur_title">เปิดใช้งาน live blur</string>
     <string name="unica_pif_toast_checking">กำลังตรวจสอบอัพเดท</string>
     <string name="unica_pif_toast_error">มีปัญหาบางอย่างเกิดขึ้น</string>
     <string name="unica_pif_toast_up_to_date">"คุณกำลังใช้เวอร์ชั่นล่าสุด"</string>

@@ -23,7 +23,6 @@
     <string name="unica_keybox_status_valid">Keybox válida</string>
     <string name="unica_keybox_toast_error">Ocorreu um erro.</string>
     <string name="unica_max_refresh_rate_title">Forçar taxa de atualização máxima</string>
-    <string name="unica_native_blur_title">Ativar desfoque em tempo real</string>
     <string name="unica_pif_toast_checking">A verificar atualizações…</string>
     <string name="unica_pif_toast_error">Ocorreu um erro.</string>
     <string name="unica_pif_toast_error_custom">Ficheiro inválido.</string>

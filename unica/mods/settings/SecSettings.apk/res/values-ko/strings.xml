@@ -36,7 +36,6 @@
     <string name="unica_menu_item_reboot_recovery_title">Recovery로 재부팅</string>
     <string name="unica_menu_item_reboot_title">재부팅</string>
     <string name="unica_menu_reboot_title">재부팅 메뉴</string>
-    <string name="unica_native_blur_title">라이브 블러 효과 활성화</string>
     <string name="unica_pif_custom_title">파일에서 사용자 지정 PIF 속성 가져오기</string>
     <string name="unica_pif_summary">Google Play 인증을 통과하기 위해 기기를 위장하세요.</string>
     <string name="unica_pif_title">Play Integrity Fix</string>

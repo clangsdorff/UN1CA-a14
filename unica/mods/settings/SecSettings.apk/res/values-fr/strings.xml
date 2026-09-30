@@ -36,7 +36,6 @@
     <string name="unica_menu_item_reboot_recovery_title">Redémarrer en mode Recovery</string>
     <string name="unica_menu_item_reboot_title">Redémarrer</string>
     <string name="unica_menu_reboot_title">Options de redémarrage</string>
-    <string name="unica_native_blur_title">"Activer l'effet de flou en direct"</string>
     <string name="unica_pif_custom_title">Importer des propriétés PIF personnalisées depuis un fichier</string>
     <string name="unica_pif_summary">"Usurper l'identité de votre appareil pour réussir l'attestation Google Play."</string>
     <string name="unica_pif_title">Play Integrity Fix</string>
